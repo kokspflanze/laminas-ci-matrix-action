@@ -49,6 +49,7 @@ function checkout {
         git fetch origin
     else
         echo "Cloning repository"
+        echo "${GITHUB_REPOSITORY}"
         git clone git@github.com:"${GITHUB_REPOSITORY}" .
     fi
 
